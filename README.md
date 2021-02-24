@@ -12,8 +12,9 @@ snakemake --help
 snakemake -n # dry-run
 snakemake --cores 1 # execute locally
 snakemake --report report.html # after running snakemake, create a report
-snakemake --dag
+snakemake --dag | dot -Tpng > dag.png
 snakemake -n --forceall
+snakemake --forceall --use-conda # --conda-frontend mamba
 ```
 
 
