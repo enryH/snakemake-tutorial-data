@@ -2,7 +2,7 @@ SAMPLES = ["A", "B"]
 
 rule all:
     input:
-        "plots/quals.svg"
+        "plots/quals.png"
 
 rule bwa_map:
     input:
@@ -55,7 +55,7 @@ rule plot_quals:
     input:
         "calls/all.vcf"
     output:
-        "plots/quals.svg"
+        "plots/quals.png"
     conda:
         "environment.yaml"
     script:
