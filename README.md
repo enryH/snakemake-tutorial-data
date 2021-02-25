@@ -15,6 +15,7 @@ snakemake --report report.html # after running snakemake, create a report
 snakemake --dag | dot -Tpng > dag.png
 snakemake -n --forceall
 snakemake --forceall --use-conda # --conda-frontend mamba
+snakemake --print-compilation > snakemake.py
 ```
 
 
