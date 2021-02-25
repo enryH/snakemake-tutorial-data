@@ -4,21 +4,26 @@ This repository hosts the final code and data needed for the [Snakemake tutorial
 
 
 Run in VScode using binder:  [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/enryH/snakemake-tutorial/snakemake-tutorial?urlpath=vscode/?folder=/home/jovyan/snakemake-tutorial-data)
+(refresh if you get at 500 error code)
 
 ## To try
 
 ```bash
 snakemake --help
-snakemake -n # dry-run
-snakemake --cores 1 # execute locally
+snakemake -n # --dryrun
+snakemake -n - # --printshellcmd
+snakemake --cores 1 # execute locally with N cores
 snakemake --report report.html # after running snakemake, create a report
-snakemake --dag | dot -Tpng > dag.png
-snakemake -n --forceall
-snakemake --forceall --use-conda # --conda-frontend mamba
-snakemake --print-compilation > snakemake.py
+snakemake --dag | dot -Tpng > dag.png # look at directed acyclic graph (DAG) of jobs 
+snakemake -n --forceall # force re-run, otherwise everything was done
+snakemake --forceall --use-conda --conda-frontend mamba # run with newly create environments
+snakemake --print-compilation > snakemake.py # inspect python script generated based on Snakefile
 ```
 
-
+### Questions/Topics raised
+- explain what wildcards of a rule are
+- tutorial is a simple read-alignment pipeline
+- What are ancient, temp, pipe statements etc around file names
 
 
 If you want to revert changes with the possibility to replay them, use 
