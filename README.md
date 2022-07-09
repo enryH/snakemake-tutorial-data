@@ -3,7 +3,7 @@
 This repository hosts the final code and data needed for the [Snakemake tutorial](https://snakemake.readthedocs.io/en/stable/tutorial/tutorial.html).
 
 
-Run in VScode using binder:  [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/enryH/snakemake-tutorial/snakemake-tutorial?urlpath=vscode/?folder=/home/jovyan/snakemake-tutorial-data)
+Run in VScode using binder:  [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/enryH/snakemake-tutorial/master?urlpath=vscode/?folder=/home/jovyan/snakemake-tutorial-data)
 (refresh if you get at 500 error code)
 
 ## To try
@@ -35,3 +35,4 @@ git stash --all
 ## CHANGELOG
 
 - png instead of svg histogram (easier to view)
+- latest code-server  (`4.5.0`) is not working with mybinder
